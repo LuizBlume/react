@@ -2,6 +2,7 @@ import './App.css';
 import Frase from './components/Frase';
 import SayMyName from './components/SayMyName';
 import Pessoa from './components/Pessoa';
+import List from './components/List'
 
 function App() {
   const name = 'Luiz';
@@ -19,6 +20,7 @@ function App() {
       <SayMyName name="Ganso" />
       <SayMyName name={name} />
       <Pessoa name={name} age="18" profession="Programador" photo={url} />
+      <List />
     </div>
   );
 }
