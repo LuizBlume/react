@@ -1,4 +1,5 @@
 import './App.css';
+import Frase from './components/Frase';
 
 function App() {
   const name = 'Luiz';
@@ -12,6 +13,7 @@ function App() {
       <h1>Olá {newName}!</h1>
       <h2>Soma dos valores é {sum(1, 2)}</h2>
       <img src={url} alt='Minha imagem teste' />
+      <Frase />
     </div>
   );
 }
