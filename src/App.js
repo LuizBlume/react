@@ -1,5 +1,7 @@
 import './App.css';
 import Frase from './components/Frase';
+import SayMyName from './components/SayMyName';
+import Pessoa from './components/Pessoa';
 
 function App() {
   const name = 'Luiz';
@@ -14,6 +16,9 @@ function App() {
       <h2>Soma dos valores é {sum(1, 2)}</h2>
       <img src={url} alt='Minha imagem teste' />
       <Frase />
+      <SayMyName name="Ganso" />
+      <SayMyName name={name} />
+      <Pessoa name={name} age="18" profession="Programador" photo={url} />
     </div>
   );
 }
