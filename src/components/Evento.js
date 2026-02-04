@@ -1,3 +1,4 @@
+import Button from "./Button";
 function Evento({ numero }) {
     function myEvent() {
         alert(`Olá, fui ativado pelo número ${numero}`)
@@ -5,7 +6,7 @@ function Evento({ numero }) {
     return (
         <>
             <p>Clique aqui para disparar o evento</p>
-            <button onClick={myEvent}>Ativar!</button>
+            <Button event={myEvent} text="Primeiro evento" />
         </>
     )
 }
